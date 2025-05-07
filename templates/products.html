@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <title>商品列表 - 洗車產品官網</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head> 
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">愛貓TV</div>
+        <div class="navbar-links">
+            <a href="/">首頁</a>
+            <a href="/products">商品</a>
+            <a href="#contact">聯絡我們</a>
+        </div>
+    </nav>
+
+    <h1>哈基咪列表</h1>
+    <!-- 迴圈 -->
+    <div class="product-grid"></div>
+        {% for item in products %} 
+            <div class="product-card">
+                <img src="{{ item.image }}" alt="{{ item.name }}">
+                <h3>{{ item.name }}</h3>
+                <p>價格：${{ item.price }}</p>
+            </div>
+        {% endfor %} 
+    </div>
+    <!-- 迴圈中止 -->
+</body>
+
+
+</html>

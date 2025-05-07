@@ -1,0 +1,100 @@
+body {
+    background-color: #121212;
+    color: #eee;
+    font-family: 'Noto Sans TC', 'Helvetica Neue', 'Microsoft JhengHei', sans-serif;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #B58ED2;
+    margin-bottom: 40px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.product-card {
+    height: 400px; /* 根據卡片圖與字數調整高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    vertical-align: top;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 0.95rem;  /* 整體字體微調小一點 */
+}
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-card h3 {
+    font-size: 1.2rem;         /* 商品名稱大一點 */
+    color: #D9A5FF;            /* 柔和紫色 */
+    margin: 0 0 8px 0;
+    font-weight: 600;
+
+}
+
+.product-card p {
+    font-size: 0.9rem;         /* 價格小一點 */
+    color: #bbb;
+    margin: 0;
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #1A1A1A;
+    color: #EEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.navbar a {
+    color: #EEE;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #D9A5FF;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
